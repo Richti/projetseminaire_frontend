@@ -1,7 +1,13 @@
 # Projet pour le seminaire WEB EFREI
 
-Février 2017
+Paul Fryson & Richard Gruet - Février 2017
 
-# Binome
+Lancer le projetseminaire_backend avant
+
+// Installer les dépendances
+npm install
+
+// Sur le navigateur
+localhost:3001
 
 Paul Fryson & Richard Gruet
