@@ -1,0 +1,9 @@
+extends layout
+block content
+		.container
+			.box.col-lg-12
+				h1 Listes de tous les users
+				ul
+					each user in users
+						.jumbotron.col-lg-12
+							li= user.name
