@@ -2,8 +2,12 @@ extends layout
 block content
 		.container
 			.box.col-lg-12
-				h1 Listes de tous les users
-				ul
-					each user in users
-						.jumbotron.col-lg-12
-							li= user.name
+				h1 Les utilisateurs :
+				script(type='text/javascript', src='../js/script.js').
+					
+				each user in users
+					- var id = user.id
+					.jumbotron.col-lg-12(onclick='goToUser("' + id + '")')
+						h2= user.name
+						h4 Email : #{user.email} 
+						h4 Alliance : #{user.alliance_id}

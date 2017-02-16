@@ -1,0 +1,12 @@
+extends layout
+block content
+	.container
+		.box.col-lg-12
+			h1 Les personnages :
+			script(type='text/javascript', src='../js/script.js').
+			each character in characters
+				- var id = character.id
+				.jumbotron.col-lg-12(onclick='goToCharacter("' + id + '")')
+					h2= character.name
+					h4 Classe : #{character.class}
+					h4 Utilisateur : #{character.user_id}

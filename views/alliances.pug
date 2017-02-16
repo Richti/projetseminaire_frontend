@@ -1,0 +1,11 @@
+extends layout
+block content
+		.container
+			.box.col-lg-12
+				h1 Les alliances :
+				script(type='text/javascript', src='../js/script.js').
+				each alliance in alliances
+					- var id = alliance.id
+					.jumbotron.col-lg-12(onclick='goToAlliance("' + id + '")')
+						h2= alliance.name
+						p= 'Nec vox accusatoris ulla licet subditicii in his malorum quaerebatur acervis ut saltem specie tenus crimina praescriptis legum committerentur, quod aliquotiens fecere principes saevi: sed quicquid Caesaris implacabilitati sedisset, id velut fas iusque perpensum confestim urgebatur impleri.'
