@@ -7,7 +7,7 @@ router.get('/', function(req, res, next){
 	request('http://ec2-52-54-102-237.compute-1.amazonaws.com:3000/users', function (error, response, body) {
 		var users = JSON.parse(body).users;
   		if (!error && response.statusCode == 200) {
-   			request('http://localhost:3000/alliances', function (error, response, body) {
+   			request('http://ec2-52-54-102-237.compute-1.amazonaws.com:3000/alliances', function (error, response, body) {
 		  		if (!error && response.statusCode == 200) {
 		  			var alliances = JSON.parse(body).alliances;
 		  			users.forEach((user)=> {
