@@ -4,8 +4,8 @@ Paul Fryson & Richard Gruet - Février 2017
 
 [Lancer le projet : seminaire_backend avant](https://github.com/Richti/projetseminaire_backend)
 
-Installer les dépendances
-- npm install
+- npm install (installer les dépendances)
+- npm start (Lancer le projet)
 
 Sur le navigateur
 - localhost:3001
